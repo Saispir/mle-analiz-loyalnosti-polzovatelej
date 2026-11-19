@@ -31,14 +31,23 @@
 ---
 
 ## 🚀 Быстрый запуск
+Для начала создайте виртуальную среду и активируйте ее: 
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+Затем установите все библиотеки из requierements.txt:
+```bash
+pip install -r requierements.txt
+```
+Создайте .env по образцу .env.example и заполните поля необходимыми данными:
+-имя пользователя базы данных и пароль;
+-адрес сервера базы данных, включая порт;
+-название базы данных.
 
 Для воспроизведения расчётов и вывода итогового отчёта выполните в терминале:
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requierements.txt
-создайте .env по образцу .env.example и заполните поля
 python3 main.py
 ```
 
